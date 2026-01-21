@@ -1,0 +1,78 @@
+/* Alap beállítások */
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: #f5f5f5;
+    color: #4C0E5F;
+    margin: 0;
+    padding: 0 20px;
+    line-height: 1.6;
+}
+
+/* Címsorok */
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 2.2em;
+    color: #6A1B9A;
+}
+
+h2 {
+    margin-top: 30px;
+    font-size: 1.8em;
+    border-bottom: 2px solid #4C0E5F;
+    padding-bottom: 5px;
+}
+
+h3 {
+    margin-top: 25px;
+    font-size: 1.5em;
+    color: #7B1FA2;
+}
+
+/* Bekezdések */
+p {
+    margin: 15px 0;
+    font-size: 1em;
+}
+
+/* Fontok és kiemelések */
+strong {
+    color: #9C27B0;
+}
+
+/* Számozott lista, ha lépésekhez használjuk */
+ol {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Kódrészletek vagy képletek stílusa */
+code {
+    background-color: #eee;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+/* Speciális blokkok, pl. képletek vagy figyelmeztetések */
+.point-formula {
+    background-color: rgba(76, 14, 95, 0.1);
+    border-left: 5px solid #4C0E5F;
+    padding: 10px 15px;
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+/* Linkek */
+a {
+    color: #7B1FA2;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

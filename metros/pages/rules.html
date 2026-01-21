@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rules</title>
+    <link rel="stylesheet" href="../src/rules.css">
+</head>
+<body>
+    <h1>Budapest Metrói — Játékszabály</h1>
+    <h2>Bevezető</h2>
+    <p>Budapest nyüzsgő belvárosának elengedhetetlen eleme kontinentális Európa legrégebbi metróhálózata, 
+        mely évente körülbelül négyszázmillió utazást szolgál ki. Egy jó metróhálózat rengeteg tervezést 
+        igényel persze, nem csak mérnöki, de menedzsment szempontból is - hiszen a váratlan eseményekre fel 
+        kell készülnünk. A Fővárosi Közgyűlés mai ülésén a 33 képviselő Szilveszter Gergő főpolgármester 
+        javaslatára egyhangú igennel szavazott meg téged a Metrófejlesztési Bizottság operatív vezetőjének; 
+        gratulálunk! A feladatod el is kezdődik, Hősies Dávid egykori BKK vezérigazgató ismerteti a részleteket.
+    </p>
+    <h2>Játékleírás</h2>
+    <p>A JavaScript projekt egy egyszemélyes metróépítős játék, melyben a cél minél több pontot összegyűjteni. 
+        A játék négy fordulóból áll, mindegyikben több körön keresztül egy adott metróvonalat épít a játékos 
+        (M1/sárga, M2/piros, M3/kék, M4/zöld). A fordulók sorrendje véletlenszerű.
+        A metróvonalak szakaszainak építéséhez megállókártyákat fordítunk fel, amiken szerepelhet 
+        A, B, C, D betű vagy a Joker szimbólum (illetve 1 megállókártya váltó szimbólummal, ez extra feladat, 
+        erről később írunk). A betűjelek mondják meg, milyen megállóhelybe húzhatunk be új szakaszt a jelenleg 
+        épített metróvonalunkból.
+        A térkép egy 10 x 10 mezőből álló négyzetrács, melyen a stations.json-ben (illetve a stations-min.json-ben, 
+        ha nem szeretnéd a pontszámítást megcsinálni) meghatározottak szerint megállóhelyek találhatók. Ezek közül 
+        négyet színnel is kiemelünk, ezek a kiinduló-megállóhelyek, amik az első lépést adják majd meg a metróvonalainknak 
+        (a lines.json file alapján). Minden megállóhelynek van egy betűjele (A, B, C, D), kivéve a 30-as ID-jút (Deák tér), 
+        ami egy Joker megállóhely, ennek nincs betűjele; vagy másképp, ez mindegyik betűjellel rendelkezik. A játék legelején 
+        a térképen még nincs berajzolva egyetlen metróvonalhoz tartozó szakasz sem.
+    </p>
+    <h2>A lépések szabályai</h2>
+
+    <h3>1. Kártyahúzás</h3>
+    <p>Minden kör elején fel kell fordítani egy megállókártyát. Ez meghatározza, hogy a játékos
+        milyen típusú megállóhelyre húzhatja be a következő szakaszt. A szakasz célállomása akkor érvényes, ha:</p>
+    <ul>
+        <li>a megálló <strong>betűjele megegyezik</strong> a kártyán lévő betűvel, vagy</li>
+        <li>a kártya <strong>Joker</strong>, vagy</li>
+        <li>a megálló <strong>Deák tér</strong>, amely minden kártyára érvényes.</li>
+    </ul>
+
+    <h3>2. Kiindulási pont kiválasztása</h3>
+    <p>Ha egy metróvonalat épp elkezdesz építeni (például az adott forduló első lépésében), akkor
+        csak a metróvonal <strong>kezdő megállójából</strong> indulhatsz ki.
+        Ha már korábban építettél rá szakaszokat, akkor eme metróvonal bármely <strong>végpontjáról</strong> indulhatsz.
+    </p>
+
+    <h3>3. A célmegálló kiválasztása</h3>
+    <p>A kijelölt célmegállóra akkor húzhatsz szakaszt, ha:</p>
+    <ul>
+        <li>a megálló típusa (A/B/C/D/Joker) illeszkedik a felhúzott kártyához,</li>
+        <li>a két megálló nincsen ugyanazon a ponton (A→A tiltott),</li>
+        <li>a két megálló <strong>közvetlenül összeköthető</strong> vízszintes, függőleges vagy átlós irányban,</li>
+        <li>a köztük húzott vonal <strong>nem metszi</strong> egy másik metróvonal szakaszát,</li>
+        <li>a szakasz <strong>nem létezik már</strong> korábbról (sem A→B, sem B→A formában).</li>
+    </ul>
+
+    <h3>4. Vonal létrehozása</h3>
+    <p>Ha minden feltétel teljesült, akkor a játékos:</p>
+    <ul>
+        <li>berajzolja a szakaszt a rácsra,</li>
+        <li>hozzáadja a szakaszt a metróvonal listájához,</li>
+        <li>frissíti a metróvonal végpontjainak listáját,</li>
+        <li>lezárja a körét, jön a következő kártyahúzás.</li>
+    </ul>
+
+    <h3>5. Tiltott lépések</h3>
+    <ul>
+        <li>Két különböző metróvonal nem metszheti egymást a rácson (csak közös állomási végpont engedett).</li>
+        <li>Nem lehet két megálló között többször szakaszt húzni.</li>
+        <li>Nem lehet zig-zag vagy törött vonal: csak az egyenes (8 irány) engedélyezett.</li>
+        <li>Nem léphetsz át olyan cellán, ahol másik metróvonal szakasza halad.</li>
+    </ul>
+
+    
+    <h2>Pontszámítás</h2>
+    <p>Minden forduló végén (mikor elkészült az adott metróvonal) ki kell számolni az alábbi három értéket:</p>
+
+    <h3>PK — Hány kerületet érint a metróvonal</h3>
+    <p>Számold meg, hány különböző kerület (<code>district</code>) szerepel a metróvonal állomásainak adatai között.
+       A pontszám a különböző kerületek száma:
+       <br><em>Példa: ha a vonal 3 különböző kerületet érint → PK = 3.</em></p>
+
+    <h3>PM — Hány megállóhelyet érint a vonal abban a kerületben, ahol a legtöbbet érinti</h3>
+    <p>Minden kerületre megszámoljuk, hány megállót érint a vonal. A PM értéke a legnagyobb ilyen szám.
+        <br><em>Példa: ha a vonal a VIII. kerületben 5 megállót érint, ez a legtöbb → PM = 5.</em></p>
+
+    <h3>PD — Hányszor kel át a vonal a Duna alatt</h3>
+    <p>Az állomásoknak van egy <code>side</code> jelölése (például Buda/Pest). Minden alkalommal, amikor két egymást követő állomás oldalt vált, a vonal átkel a Dunán.
+        <br><em>Példa: Pest → Buda → Pest → Buda = 3 átkelés, így PD = 3.</em></p>
+
+    <h3>FP — Forduló pontok</h3>
+    <p>Minden egyes metróvonal-építés forduló után kiszámítjuk a forduló pontokat:</p>
+    <ul>
+        <li><strong>PK:</strong> hány különböző kerületet érint a vonal</li>
+        <li><strong>PM:</strong> hány megállót érint a vonal a legtöbb megállót tartalmazó kerületben</li>
+        <li><strong>PD:</strong> hányszor kel át a vonal a Duna alatt</li>
+        <li><strong>FP = PK × PM + PD</strong></li>
+    </ul>
+
+    <h3>Teljes pontszám</h3>
+    <p>A játék végén minden fordulóban megszerzett <strong>FP</strong> pontot összeadunk, így kapjuk meg a játékos teljes pontszámát:</p>
+    <p><strong>Teljes pontszám = FP₁ + FP₂ + FP₃ + FP₄</strong></p>
+</body>
+</html>
