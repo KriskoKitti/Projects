@@ -1,0 +1,16 @@
+Anna;7
+Bence;10
+Csaba;3
+Dóra;5
+Eszter;9
+Feri;2
+Gábor;6
+Hanna;8
+István;4
+Judit;1
+Krisztián;10
+Lilla;0
+Márk;7
+Nóra;5
+Olga;6kitti;0
+kitti;1
