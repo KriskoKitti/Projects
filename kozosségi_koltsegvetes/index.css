@@ -1,0 +1,42 @@
+@import url("https://cdn.jsdelivr.net/gh/elte-fi/www-assets@19.10.16/styles/mdss.min.css");
+
+details span {
+  color: green;
+}
+
+.project-image {
+    width: 300px;
+    height: auto;
+}
+
+button {
+    padding: 8px 14px;
+    margin: 4px 0;
+    border: none;
+    border-radius: 6px;
+    background-color: #517d81; 
+    color: white;
+    font-size: 14px;
+}
+
+.top-right {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+}
+
+.big-input {
+    width: 100%; 
+    max-width: 400px;
+    font-size: 12px; 
+    padding: 6px 8px;
+}
+
+.big-textarea {
+    width: 500px;
+    height: 100px;   /* több sor */
+    font-size: 16px;
+    padding: 8px;
+    resize: vertical; /* a felhasználó csak függőlegesen méretezheti */
+    vertical-align: top;
+}

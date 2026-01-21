@@ -1,0 +1,16 @@
+{
+    "695bf46de1a2f": {
+        "username": "juhi",
+        "email": "nagyi@webprog.hu",
+        "password": "$2y$12$eMZcq.9StDryjJrw1UA23OVLsQKJRNhaF4A\/ZJfX9g8rfRLQNQt3u",
+        "is_admin": false,
+        "id": "695bf46de1a2f"
+    },
+    "695d640a33f09": {
+        "username": "admin",
+        "email": "admin@admin.hu",
+        "password": "$2y$12$7kKzh6UtdlCkA4dCx49hF.pDz5jeM9ufC7Gh1IvE5lZcy2MgrVf.K",
+        "is_admin": true,
+        "id": "695d640a33f09"
+    }
+}

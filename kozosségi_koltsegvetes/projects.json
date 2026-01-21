@@ -1,0 +1,109 @@
+{
+    "1": {
+        "id": "1",
+        "status_id": 2,
+        "title": "K\u00f6z\u00f6ss\u00e9gi j\u00e1tsz\u00f3t\u00e9r fel\u00faj\u00edt\u00e1sa",
+        "description": "A ker\u00fcleti j\u00e1tsz\u00f3t\u00e9r eszk\u00f6zeinek cser\u00e9je \u00e9s biztons\u00e1gosabb\u00e1 t\u00e9tele a helyi csal\u00e1dok sz\u00e1m\u00e1ra.",
+        "category": "0",
+        "postal_code": "1039",
+        "image": "",
+        "owner": "101",
+        "submitted": "2025-03-12 14:30",
+        "approved": "2025-04-01 09:15"
+    },
+    "2": {
+        "status_id": 2,
+        "title": "Ker\u00fcleti sportk\u00f6zpont fejleszt\u00e9se",
+        "description": "\u00daj sportp\u00e1ly\u00e1k \u00e9s \u00f6lt\u00f6z\u0151k \u00e9p\u00edt\u00e9se a fiatalok \u00e9s amat\u0151r sportol\u00f3k sz\u00e1m\u00e1ra.",
+        "category": "1",
+        "postal_code": "1117",
+        "owner": "695bf46de1a2f",
+        "submitted": "2025-05-20 10:00",
+        "approved": "2026-01-06 22:37",
+        "id": "2"
+    },
+    "3": {
+        "id": "3",
+        "status_id": 2,
+        "title": "Digit\u00e1lis felz\u00e1rk\u00f3ztat\u00f3 program id\u0151seknek",
+        "description": "Ingyenes sz\u00e1m\u00edt\u00f3g\u00e9p- \u00e9s okostelefon-haszn\u00e1lati k\u00e9pz\u00e9sek nyugd\u00edjasok sz\u00e1m\u00e1ra.",
+        "category": "2",
+        "postal_code": "1082",
+        "image": "",
+        "owner": "103",
+        "submitted": "2025-02-01 08:45",
+        "approved": "-"
+    },
+    "4": {
+        "id": "4",
+        "status_id": 2,
+        "title": "V\u00e1rosi k\u00f6z\u00f6ss\u00e9gi kert l\u00e9trehoz\u00e1sa",
+        "description": "Elhanyagolt z\u00f6ldter\u00fclet \u00e1talak\u00edt\u00e1sa k\u00f6z\u00f6ss\u00e9gi kertt\u00e9 komposzt\u00e1l\u00f3val \u00e9s es\u0151v\u00edzgy\u0171jt\u00e9ssel.",
+        "category": "3",
+        "postal_code": "1095",
+        "image": "",
+        "owner": "104",
+        "submitted": "2025-04-10 12:00",
+        "approved": "2025-05-02 11:00"
+    },
+    "695d346994722": {
+        "status_id": 2,
+        "title": "Parkol\u00f3 b\u0151v\u00edt\u00e9s a XI. ker\u00fcletben",
+        "description": "\u00daj parkol\u00f3helyek kialak\u00edt\u00e1sa a XI. ker\u00fclet s\u0171r\u0171n lakott r\u00e9szein, hogy a helyi lakosok k\u00e9nyelmesebben tudjanak parkolni, \u00e9s cs\u00f6kkenjen a k\u00f6rny\u00e9ken a forgalmi torl\u00f3d\u00e1s, mik\u00f6zben a k\u00f6rnyezetv\u00e9delmi szempontokat is figyelembe vessz\u00fck.",
+        "category": "0",
+        "postal_code": "1117",
+        "image": "",
+        "owner": "695bf46de1a2f",
+        "submitted": "2026-01-06 16:12",
+        "approved": "-",
+        "id": "695d346994722"
+    },
+    "695d34f784c0a": {
+        "status_id": 2,
+        "title": "Z\u00f6ldtet\u0151 telep\u00edt\u00e9se a VIII. ker\u00fcletben",
+        "description": "Az iskola \u00e9p\u00fclet\u00e9nek tetej\u00e9n z\u00f6ldtet\u0151 kialak\u00edt\u00e1sa, mely jav\u00edtja a leveg\u0151 min\u0151s\u00e9g\u00e9t, cs\u00f6kkenti a h\u0151terhel\u00e9st ny\u00e1ron, \u00e9s oktat\u00e1si lehet\u0151s\u00e9get is biztos\u00edt a di\u00e1kok sz\u00e1m\u00e1ra a fenntarthat\u00f3s\u00e1gr\u00f3l \u00e9s a k\u00f6rnyezetv\u00e9delemr\u0151l.",
+        "category": "3",
+        "postal_code": "1084",
+        "image": "",
+        "owner": "695bf46de1a2f",
+        "submitted": "2026-01-06 16:14",
+        "approved": "-",
+        "id": "695d34f784c0a"
+    },
+    "695d3522e543b": {
+        "status_id": 1,
+        "title": "Es\u00e9lyteremt\u0151 program fiataloknak",
+        "description": "Oktat\u00e1si \u00e9s mentorprogramot ind\u00edtunk a h\u00e1tr\u00e1nyos helyzet\u0171 fiatalok sz\u00e1m\u00e1ra a IX. ker\u00fcletben, amely t\u00e1mogat\u00e1st ny\u00fajt a tanulm\u00e1nyokban, fejleszti k\u00e9szs\u00e9geiket, \u00e9s lehet\u0151s\u00e9get ad a k\u00f6z\u00f6ss\u00e9gi r\u00e9szv\u00e9telre, ez\u00e1ltal n\u00f6velve es\u00e9lyeiket a munkaer\u0151piacon.",
+        "category": "2",
+        "postal_code": "1092",
+        "image": "https:\/\/hellokomaromesztergom.hu\/data\/articles\/109\/1091\/article-109195\/team_motivation_teamwork_together_53958_focuspoint_1920x820.jpeg",
+        "owner": "695bf46de1a2f",
+        "submitted": "2026-01-06 16:15",
+        "approved": "-",
+        "id": "695d3522e543b"
+    },
+    "695d354db99ec": {
+        "status_id": 2,
+        "title": "Ker\u00fcleti sportp\u00e1lya fel\u00faj\u00edt\u00e1sa",
+        "description": "A helyi sportp\u00e1lya teljes fel\u00faj\u00edt\u00e1sa, amely mag\u00e1ban foglalja a fut\u00f3p\u00e1lya, a p\u00e1lya burkolat\u00e1nak \u00e9s a kieg\u00e9sz\u00edt\u0151 sporteszk\u00f6z\u00f6k cser\u00e9j\u00e9t, hogy minden koroszt\u00e1ly sz\u00e1m\u00e1ra biztons\u00e1gos \u00e9s vonz\u00f3 sportol\u00e1si lehet\u0151s\u00e9get biztos\u00edtsunk.",
+        "category": "0",
+        "postal_code": "1126",
+        "image": "",
+        "owner": "695bf46de1a2f",
+        "submitted": "2026-01-06 16:16",
+        "approved": "2026-01-06 22:36",
+        "id": "695d354db99ec"
+    },
+    "695e626eeac59": {
+        "status_id": 2,
+        "title": "Lak\u00f3telepi k\u00f6z\u00f6ss\u00e9gi kert kialak\u00edt\u00e1sa",
+        "description": "A projekt c\u00e9lja egy jelenleg kihaszn\u00e1latlan lak\u00f3telepi z\u00f6ldter\u00fclet k\u00f6z\u00f6ss\u00e9gi kertt\u00e9 alak\u00edt\u00e1sa. A kert lehet\u0151s\u00e9get adna a k\u00f6rny\u00e9ken \u00e9l\u0151knek saj\u00e1t z\u00f6lds\u00e9gek \u00e9s f\u0171szern\u00f6v\u00e9nyek termeszt\u00e9s\u00e9re, mik\u00f6zben er\u0151s\u00edti a k\u00f6z\u00f6ss\u00e9gi \u00f6sszetartoz\u00e1st, jav\u00edtja a k\u00f6rnyezet \u00e1llapot\u00e1t \u00e9s el\u0151seg\u00edti a fenntarthat\u00f3 v\u00e1rosi \u00e9letm\u00f3d kialak\u00edt\u00e1s\u00e1t.",
+        "category": "0",
+        "postal_code": "1041",
+        "image": "",
+        "owner": "695d640a33f09",
+        "submitted": "2026-01-07 13:41",
+        "approved": "2026-01-07 13:41",
+        "id": "695e626eeac59"
+    }
+}
